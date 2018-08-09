@@ -1,0 +1,123 @@
+body {
+    background-color: rgb(241, 158, 3);
+    font-size: 24px;
+    font-family: "Ham";
+}
+
+h1 {
+    font-family: "Burger";
+    font-size: 62px;
+    color: rgb(0, 238, 255);
+    text-shadow: 3px 3px #2e5779;
+}
+
+.container {
+    padding: 30px;
+    text-align: center;
+}
+
+.header {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+img {
+    width: 350px;
+}
+
+.burgerHead {
+    font-family: "Burger";
+    text-align: center;
+}
+
+.toBeEaten,
+.devoured {
+    display: block;
+    width: 450px;
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    border: 3px solid #2e5779b6;
+    background: rgb(253, 179, 41);
+    box-shadow:2px 2px 2px 2px #3e3e3f86;
+    font-size: 18px;
+}
+
+.burgerItem {
+    margin-bottom: 10px;
+    width: 300px;
+}
+
+.btn {
+    height: 35px;
+    padding-top: 3px;
+}
+
+#change-devoured,
+#delete {
+    background: #2e5779;
+    color: aqua;
+    display: block;
+    float: right;
+    border: none;
+}
+
+#delete {
+    margin-right: 5px;
+}
+
+#change-devoured:hover,
+#delete:hover,
+#addbtn:hover {
+    background: aqua;
+    color: #2e5779;
+}
+
+.addBurger {
+    padding: 10px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 3px solid #2e5779b6;
+    background: rgb(253, 179, 41);
+    box-shadow:2px 2px 2px 2px #3e3e3f86;
+    font-size: 18px;
+}
+
+.radios {
+    text-align: left;
+    margin-left: 80px;
+}
+
+#addbtn {
+    background: #2e5779;
+    color: aqua;
+    border: none;
+}
+
+.footer {
+    margin-top: 80px;
+    font-size: 16px;
+}
+
+a {
+    text-decoration: none;
+    color: aqua;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #2e5779;
+}
+
+@font-face {
+    font-family: 'Burger';
+    src: url(../fonts/CHEESEBU.TTF) format('truetype');
+}
+
+@font-face {
+    font-family: 'Ham';
+    src: url(../fonts/HAMBH___.TTF) format('truetype');
+}

@@ -1,0 +1,69 @@
+<div class="container">
+
+  <div class="row">
+    <div class="header">
+
+      <img id="burger" src="assets/img/burger.PNG">
+
+      <h1>EAT-DA-BURGER</h1>
+
+    </div>
+  </div>
+
+  <div class="row" id="burgers">
+    <div class="toBeEaten">
+
+      <h2 class="burgerHead">~To Be Eaten~</h2>
+
+      <ul>
+        {{#each burgers}} {{#unless devoured}} {{> burgers/burger-block devoured = true}} {{/unless}} {{/each}}
+      </ul>
+
+    </div>
+
+    <div class="devoured">
+
+      <h2 class="burgerHead">~Digesting~</h2>
+
+      <ul>
+        {{#each burgers}} {{#if devoured}}
+        <li class="burgerItem">{{burger_name}} {{> burgers/burger-delete}}</li>
+        {{/if}} {{/each}}
+      </ul>
+
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="addBurger">
+
+      <h2 class="burgerHead">~Add a Burger~</h2>
+
+      <form class="create-form">
+
+        <div class="form-group">
+          <label for="burg">Burger Name:</label>
+          <input type="text" id="burg" name="burger_name">
+        </div>
+
+        <div class="form-group">
+          <label for="devo">Devoured?</label>
+          <br>
+          <div class="radios">
+            <input type="radio" name="devoured" value="0" checked> To Be Eaten
+            <br>
+            <input type="radio" name="devoured" value="1"> Devoured
+          </div>
+        </div>
+
+        <button class="btn btn-primary" id="addbtn" type="submit">Add Burger</button>
+      </form>
+
+    </div>
+  </div>
+
+  <div class="footer">
+    <p>&copy;Copyright 2018 Josh Willems |<a href="https://github.com/jscottwillems"> GitHub</a></p>
+  </div>
+
+</div>
