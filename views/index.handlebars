@@ -16,7 +16,7 @@
       <h2 class="burgerHead">~To Be Eaten~</h2>
 
       <ul>
-        {{#each burgers}} {{#unless devoured}} {{> burgers/burger-block devoured = true}} {{/unless}} {{/each}}
+        {{#each Burgers}} {{#unless devoured}} {{> burgers/burger-block devoured = true}} {{/unless}} {{/each}}
       </ul>
 
     </div>
@@ -26,7 +26,7 @@
       <h2 class="burgerHead">~Digesting~</h2>
 
       <ul>
-        {{#each burgers}} {{#if devoured}}
+        {{#each Burgers}} {{#if devoured}}
         <li class="burgerItem">{{burger_name}} {{> burgers/burger-delete}}</li>
         {{/if}} {{/each}}
       </ul>
